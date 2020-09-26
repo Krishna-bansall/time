@@ -1,0 +1,298 @@
+/* CSS Reset */
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.mainContainer{
+
+    background: #071a25;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    width: 100%;
+
+}
+
+.mainContainer.light{
+
+    background: #b7d1e0;
+
+}
+
+.clock{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 250px;
+
+    height: 250px;
+
+    border: 5px solid #d1dae3;
+
+    border-radius: 50%;
+
+    position: relative
+
+}
+
+.clock .num{
+
+  --rotate: 0;
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  color: #d1dae3;
+
+  text-align: center;
+
+  transform: rotate(var(--rotate));
+
+}
+
+.mainContainer.light .clock .num{ color: #091921;}
+
+.clock .num1{ --rotate: 90deg;}
+
+.clock .num2{ --rotate: 180deg;}
+
+.clock .num3{ --rotate: 270deg;}
+
+.mainContainer.light .clock{
+
+    border: 5px solid #091921;
+
+}
+
+.clock::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 15px;
+
+    height: 15px;
+
+    background: #008eff;
+
+    border-radius: 50%;
+
+    z-index: 10;
+
+}
+
+.clock .hour,
+
+.clock .min,
+
+.clock .sec{
+
+    position: absolute;
+
+}
+
+.clock .hour, .hr{
+
+    width: 110px;
+
+    height: 110px;
+
+}
+
+.clock .min, .mn{
+
+    width: 170px;
+
+    height: 170px;
+
+}
+
+.clock .sec, .sc{
+
+    width: 200px;
+
+    height: 200px;
+
+}
+
+.hr , .mn , .sc{
+
+    display: flex;
+
+    justify-content: center;
+
+    /* align-items: center; */
+
+    position: absolute;
+
+    border-radius: 50%;
+
+}
+
+.hr::before{
+
+    content: '';
+
+    width: 8px;
+
+    height: 55px;
+
+    background: #ff105e;
+
+    z-index: 7;
+
+    border-radius: 6px 6px 0 0;
+
+}
+
+.mn::before{
+
+    content: '';
+
+    width: 4px;
+
+    height: 85px;
+
+    background: #fff;
+
+    z-index: 8;
+
+    border-radius: 6px 6px 0 0;
+
+}
+
+.mainContainer.light .mn::before{
+
+    background: #091921;
+
+}
+
+.sc::before{
+
+    content: '';
+
+    width: 2px;
+
+    height: 125px;
+
+    background: #008eff;
+
+    z-index: 9;
+
+    border-radius: 6px 6px 0 0;
+
+}
+
+.toggle button{
+
+    position: absolute;
+
+    right: 5vw;
+
+    top: 5vh;
+
+    background-color: transparent;
+
+    color: #d1dae3;
+
+    margin: 2px 0.3px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+.mainContainer.light .toggle button{
+
+    color: #091921;
+
+}
+
+.digitalClock{
+
+    margin-top: 0.5em;
+
+    display: flex;
+
+    color: #d1dae3;
+
+    font-size: 3em;
+
+}
+
+.mainContainer.light .digitalClock {
+
+    color: #091921;
+
+}
+
+.head{
+
+    margin-bottom: 0.1em;
+
+    color: #d1dae3;
+
+    font-size: 2em;
+
+}
+
+.mainContainer.light .head {
+
+    color: #091921;
+
+}
+
+.cprt {
+
+  margin-bottom: 0.5em;
+
+  padding: 15px;
+
+  justify-self: flex-end;
+
+}
+
+.cprt h5 a{
+
+    color: #d1dae3;
+
+}
+
+.mainContainer.light .cprt h5 a{
+
+    color: #091921;
+
+}
+
