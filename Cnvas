@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Clock with Cnvas</title>
+
+    <link rel='stylesheet' href='Clock.css'>
+
+</head>
+
+<body>
+
+  <div class='msg'>
+
+    <span>The size of the clock depends of your screen</span>
+
+  </div>
+
+  <canvas></canvas>
+
+  <div class='color'>
+
+    <div class='container'>
+
+      <label>Clock : 
+
+        <input type='color' id='clock' value='#ee82ef'/>
+
+      </label>
+
+      <label>Outside : 
+
+        <input type='color' id='outside' value='#ff0000'/>
+
+      </label>
+
+      <label>Inside : 
+
+        <input type='color' id='inside' value='#f37e21'/>
+
+      </label>
+
+    </div>
+
+  </div>
+
+  <div class='credits'>
+
+    <span>Made by 
+
+      <a href='https://t.me/WebDevChat'>@WebDevCHAT</a>
+
+    </span>
+
+  </div>
+
+  <script type='text/javascript' src='Component.js'></script>
+
+  <script type='text/javascript' src='Clock.js'></script>
+
+</body>
+
+</html>
