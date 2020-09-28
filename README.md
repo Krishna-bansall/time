@@ -2,4 +2,4 @@
 
 #### pure html, css and javascript based Clock.css
 
-![image](/images/Screenshot.png)
+![image](/images/screenshot.png)
